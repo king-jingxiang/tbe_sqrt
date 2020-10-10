@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC   -shared -Wl,-soname,libcust_op_proto.so -o ../makepkg/packages/op_proto/custom/libcust_op_proto.so CMakeFiles/cust_op_proto.dir/sqrt.cpp.o 

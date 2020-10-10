@@ -1,0 +1,17 @@
+-- CMAKE_CURRENT_BINARY_DIR=/home/user/AscendProjects/sqrt/build/cmake
+-- CMAKE_CURRENT_SOURCE_DIR=/home/user/AscendProjects/sqrt
+-- ASCEND_TENSOR_COMPLIER_INCLUDE=/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include
+-- SYSTEM_NAME=ubuntu
+-- SYSTEM_INFO=ubuntu_x86_64
+-- RUN_TARGET=custom_opp_ubuntu_x86_64.run
+-- OUT_DIR=/home/user/AscendProjects/sqrt/build/cmake/makepkg
+-- OP_COMMON_INC=
+-- OP_PROTO_TARGET=cust_op_proto
+-- OUTPUT_FILES=aic-ascend310-ops-info.json;aic-ascend910-ops-info.json
+-- SOC_VERSION=
+-- ACLLIB_ROOT_PATH=/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/acllib_centos7.6.x86_64
+-- operation system is Linux
+-- ALL_MODULES=cust_op_proto;config_json;cust_tf_parsers
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/AscendProjects/sqrt/build/cmake

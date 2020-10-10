@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/framework/tf_plugin",
+  "command": "/usr/bin/g++  -Dcust_tf_parsers_EXPORTS -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include  -fPIC   -std=gnu++11 -o CMakeFiles/cust_tf_parsers.dir/tensorflow_sqrt_plugin.cpp.o -c /home/user/AscendProjects/sqrt/framework/tf_plugin/tensorflow_sqrt_plugin.cpp",
+  "file": "/home/user/AscendProjects/sqrt/framework/tf_plugin/tensorflow_sqrt_plugin.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/op_proto",
+  "command": "/usr/bin/g++  -Dcust_op_proto_EXPORTS -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include  -fPIC   -std=gnu++11 -o CMakeFiles/cust_op_proto.dir/sqrt.cpp.o -c /home/user/AscendProjects/sqrt/op_proto/sqrt.cpp",
+  "file": "/home/user/AscendProjects/sqrt/op_proto/sqrt.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/tbe/testcases/st",
+  "command": "/usr/bin/g++   -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include -I/home/user/MindStudio-ubuntu/tools/simulator/include -I/home/user/MindStudio-ubuntu/tools/simulator/include/model/pv_model -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/comm -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/googletest/include -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/mockcpp/5.4/include -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/mockcpp/5.4/include/3rdparty  -std=c++11 -fPIC -DLOCAL_ST -fPIE   -std=gnu++11 -o CMakeFiles/stest_all.dir/sqrt/sqrt_st.cc.o -c /home/user/AscendProjects/sqrt/tbe/testcases/st/sqrt/sqrt_st.cc",
+  "file": "/home/user/AscendProjects/sqrt/tbe/testcases/st/sqrt/sqrt_st.cc"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/tbe/testcases/st",
+  "command": "/usr/bin/g++   -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include -I/home/user/MindStudio-ubuntu/tools/simulator/include -I/home/user/MindStudio-ubuntu/tools/simulator/include/model/pv_model -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/comm -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/googletest/include -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/mockcpp/5.4/include -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/mockcpp/5.4/include/3rdparty  -std=c++11 -fPIC -DLOCAL_ST -fPIE   -std=gnu++11 -o CMakeFiles/stest_all.dir/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc.o -c /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc",
+  "file": "/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/tbe/testcases/st",
+  "command": "/usr/bin/g++   -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include -I/home/user/MindStudio-ubuntu/tools/simulator/include -I/home/user/MindStudio-ubuntu/tools/simulator/include/model/pv_model -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/comm -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/googletest/include -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/mockcpp/5.4/include -I/home/user/MindStudio-ubuntu/tools/tbe_tools/st/third_party/mockcpp/5.4/include/3rdparty  -std=c++11 -fPIC -DLOCAL_ST -fPIE   -std=gnu++11 -o CMakeFiles/stest_all.dir/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/main.cc.o -c /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/main.cc",
+  "file": "/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/main.cc"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/tbe/testcases/acl_op/src",
+  "command": "/usr/bin/g++   -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/../inc  -fPIE   -std=c++11 -std=gnu++11 -o CMakeFiles/main.dir/operator_desc.cpp.o -c /home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/operator_desc.cpp",
+  "file": "/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/operator_desc.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/tbe/testcases/acl_op/src",
+  "command": "/usr/bin/g++   -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/../inc  -fPIE   -std=c++11 -std=gnu++11 -o CMakeFiles/main.dir/op_runner.cpp.o -c /home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/op_runner.cpp",
+  "file": "/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/op_runner.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/tbe/testcases/acl_op/src",
+  "command": "/usr/bin/g++   -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/../inc  -fPIE   -std=c++11 -std=gnu++11 -o CMakeFiles/main.dir/main.cpp.o -c /home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/main.cpp",
+  "file": "/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/main.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sqrt/build/cmake/tbe/testcases/acl_op/src",
+  "command": "/usr/bin/g++   -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/atc/include -I/home/user/.mindstudio/huawei/adk/1.72.T5.0.B050/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/../inc  -fPIE   -std=c++11 -std=gnu++11 -o CMakeFiles/main.dir/common.cpp.o -c /home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/common.cpp",
+  "file": "/home/user/AscendProjects/sqrt/tbe/testcases/acl_op/src/common.cpp"
+}
+]

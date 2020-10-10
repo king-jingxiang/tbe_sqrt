@@ -1,0 +1,7 @@
+[INFO] TSCH(-1,null):20-10-10-Oct:10:.867.692 <completed > 1 : type=CREATE_STREAM      |stream_id=2    |task_id=1    |node_idx=65535|next_task_idx=65535|next_stream_idx=65535
+[INFO] TSCH(-1,null):20-10-10-Oct:10:.282.639 <completed > 2 : type=CREATE_STREAM      |stream_id=0    |task_id=1    |node_idx=65535|next_task_idx=65535|next_stream_idx=65535
+[INFO] TSCH(-1,null):20-10-10-Oct:10:.284.647 <completed > 3 : type=MAINTENANCE        |stream_id=0    |task_id=0    |node_idx=65535|next_task_idx=65535|next_stream_idx=65535|goal=DESTROY_EVENT |targetID=0    
+[INFO] TSCH(-1,null):20-10-10-Oct:10:.284.673 <completed > 4 : type=MAINTENANCE        |stream_id=2    |task_id=3    |node_idx=65535|next_task_idx=65535|next_stream_idx=65535|goal=DESTROY_STREAM|targetID=2    
+[INFO] TSCH(-1,null):20-10-10-Oct:10:.363.767 <completed > 5 : type=CREATE_STREAM      |stream_id=1    |task_id=1    |node_idx=65535|next_task_idx=65535|next_stream_idx=65535
+[INFO] TSCH(-1,null):20-10-10-Oct:10:.363.843 <completed > 6 : type=MAINTENANCE        |stream_id=1    |task_id=0    |node_idx=65535|next_task_idx=65535|next_stream_idx=65535|goal=DESTROY_STREAM|targetID=1    
+[INFO] TSCH(-1,null):20-10-10-Oct:10:.369.142 <completed > 7 : type=MAINTENANCE        |stream_id=0    |task_id=2    |node_idx=65535|next_task_idx=65535|next_stream_idx=65535|goal=DESTROY_STREAM|targetID=0    

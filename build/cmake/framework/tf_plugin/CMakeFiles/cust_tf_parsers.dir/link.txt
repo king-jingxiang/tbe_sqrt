@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC   -shared -Wl,-soname,libcust_tf_parsers.so -o ../../makepkg/packages/framework/custom/tensorflow/libcust_tf_parsers.so CMakeFiles/cust_tf_parsers.dir/tensorflow_sqrt_plugin.cpp.o 

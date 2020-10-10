@@ -1,0 +1,3 @@
+/home/user/AscendProjects/sqrt/build/st/CMakeFiles/rebuild_cache.dir
+/home/user/AscendProjects/sqrt/build/st/CMakeFiles/stest_sqrt.dir
+/home/user/AscendProjects/sqrt/build/st/CMakeFiles/edit_cache.dir

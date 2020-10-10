@@ -1,0 +1,2361 @@
+2020-10-10 06:26:36 | sqrt st start running...
+2020-10-10 06:26:36 | TestRun Run-Configuration
+2020-10-10 06:26:40 | Compile Operator Start
+2020-10-10 06:26:43 | ..
+2020-10-10 06:26:43 | ----------------------------------------------------------------------
+2020-10-10 06:26:43 | Ran 2 tests in 0.799s
+2020-10-10 06:26:43 | 
+2020-10-10 06:26:43 | OK
+2020-10-10 06:26:43 | Platform Info: mode=2, soc_version=Ascend910, core_type=AiCore, aicore_num=32, l1_fusion=False
+2020-10-10 06:26:43 | The current soc_version: Ascend910
+2020-10-10 06:26:43 | [ RUN        ] test_cce_sqrt
+2020-10-10 06:26:43 | not find testcases for cloud
+2020-10-10 06:26:43 | op[sqrt] test success, case_count=1!!
+2020-10-10 06:26:43 | [         OK ] test_cce_sqrt
+2020-10-10 06:26:43 | File in /home/user/AscendProjects/sqrt/tbe/testcases/st/sqrt run time: 0.799s
+2020-10-10 06:26:44 | Compile Operator Finished
+2020-10-10 06:26:44 | Generate Data Start
+2020-10-10 06:26:44 | Info: writing input for sqrt...
+2020-10-10 06:26:44 | Info: writing input for sqrt done!!!
+2020-10-10 06:26:44 | Info: writing output for sqrt done!!!
+2020-10-10 06:26:44 | Generate Data Finished
+2020-10-10 06:26:44 | Compile Testcase Start
+2020-10-10 06:26:45 | -- The C compiler identification is GNU 7.5.0
+2020-10-10 06:26:45 | -- The CXX compiler identification is GNU 7.5.0
+2020-10-10 06:26:45 | -- Check for working C compiler: /usr/bin/cc
+2020-10-10 06:26:45 | -- Check for working C compiler: /usr/bin/cc -- works
+2020-10-10 06:26:45 | -- Detecting C compiler ABI info
+2020-10-10 06:26:45 | -- Detecting C compiler ABI info - done
+2020-10-10 06:26:45 | -- Detecting C compile features
+2020-10-10 06:26:45 | -- Detecting C compile features - done
+2020-10-10 06:26:45 | -- Check for working CXX compiler: /usr/bin/c++
+2020-10-10 06:26:45 | -- Check for working CXX compiler: /usr/bin/c++ -- works
+2020-10-10 06:26:45 | -- Detecting CXX compiler ABI info
+2020-10-10 06:26:45 | -- Detecting CXX compiler ABI info - done
+2020-10-10 06:26:45 | -- Detecting CXX compile features
+2020-10-10 06:26:46 | -- Detecting CXX compile features - done
+2020-10-10 06:26:46 | -- SOC_VERSION=Ascend910
+2020-10-10 06:26:46 | -- Configuring done
+2020-10-10 06:26:46 | -- Generating done
+2020-10-10 06:26:46 | -- Build files have been written to: /home/user/AscendProjects/sqrt/build/st
+2020-10-10 06:26:46 | Scanning dependencies of target stest_sqrt
+2020-10-10 06:26:46 | [ 25%] Building CXX object CMakeFiles/stest_sqrt.dir/sqrt_st.cc.o
+2020-10-10 06:26:47 | [ 50%] Building CXX object CMakeFiles/stest_sqrt.dir/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc.o
+2020-10-10 06:26:48 | In file included from /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:10:0:
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc: In member function ‘char* Layer::readBinFile(const char*, uint32_t*)’:
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/./log.hpp:37:71: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘size_t {aka long unsigned int}’ [-Wformat=]
+2020-10-10 06:26:48 |                  level, __FUNCTION__, __FILE__, __LINE__, ##__VA_ARGS__);}while(0);
+2020-10-10 06:26:48 |                                                                        ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:97:5: note: in expansion of macro ‘TVM_LOG’
+2020-10-10 06:26:48 |      TVM_LOG(CC_LOG_INFO, "file:%s read succ, size is %d!", file_name, size);
+2020-10-10 06:26:48 |      ^~~~~~~
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc: In member function ‘void Layer::compareSummary(uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, const float*)’:
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:344:121: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 |      printf("<=1/1000: %lu\tPercent: %f\%\n", one_per_thousand, (float)one_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:26:48 |                                                                                                                          ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:345:121: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 |      printf("<=2/1000: %lu\tPercent: %f\%\n", two_per_thousand, (float)two_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:26:48 |                                                                                                                          ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:346:125: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 |      printf("<=3/1000: %lu\tPercent: %f\%\n", three_per_thousand, (float)three_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:26:48 |                                                                                                                              ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:347:123: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 |      printf("<=4/1000: %lu\tPercent: %f\%\n", four_per_thousand, (float)four_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:26:48 |                                                                                                                            ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:348:123: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 |      printf("<=5/1000: %lu\tPercent: %f\%\n", five_per_thousand, (float)five_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:26:48 |                                                                                                                            ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:349:119: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 |      printf("<=1/100 : %lu\tPercent: %f\%\n", one_per_hundred, (float)one_per_hundred / (float)output_data_length * 100);
+2020-10-10 06:26:48 |                                                                                                                        ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:350:127: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 |      printf(" >1/100 : %lu\tPercent: %f\%\n", big_one_per_hundred, (float)big_one_per_hundred / (float)output_data_length * 100);
+2020-10-10 06:26:48 |                                                                                                                                ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc: In member function ‘bool Layer::compareFp16OutputDataPsAlign(fp16_t*, fp16_t*, uint32_t, uint32_t, uint32_t, uint32_t, const float*)’:
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:405:154: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘uint64_t {aka long unsigned int}’ [-Wformat=]
+2020-10-10 06:26:48 |                              printf("[%d]:Expect: %f\tResult: %f\tDiff: %f\tPercent: %f\%\n", index, expect, actual, cmprlst, fabs(cmprlst / actual) * 100);
+2020-10-10 06:26:48 |                                                                                                                                                           ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:405:154: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:412:158: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘uint64_t {aka long unsigned int}’ [-Wformat=]
+2020-10-10 06:26:48 |                                  printf("[%d]:Expect: %f\tResult: %f\tDiff: %f\tPercent: %f\%\n", index, expect, actual, cmprlst, fabs(cmprlst / actual) * 100);
+2020-10-10 06:26:48 |                                                                                                                                                               ^
+2020-10-10 06:26:48 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:412:158: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:26:48 | [ 75%] Building CXX object CMakeFiles/stest_sqrt.dir/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/main.cc.o
+2020-10-10 06:26:49 | [100%] Linking CXX executable /home/user/AscendProjects/sqrt/out/bin/stest_sqrt
+2020-10-10 06:26:49 | [100%] Built target stest_sqrt
+2020-10-10 06:26:49 | Compile Testcase Finished
+2020-10-10 06:26:49 | Run Testcase Start
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:49 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:49 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:49 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:49 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:49 | biu enable_memmap_: 1
+2020-10-10 06:26:49 | biu memory_entry_num_: 64
+2020-10-10 06:26:49 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:49 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:49 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:49 | ccu isa version is: 63
+2020-10-10 06:26:49 | ccu isa sub version is: 0
+2020-10-10 06:26:49 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:49 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:49 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:49 | vec top isa verion : 630
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | vec objdet isa verion : 630
+2020-10-10 06:26:49 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:49 | cube cube_size: 0x10
+2020-10-10 06:26:49 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:49 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:49 | cube support_small_channel_: 0
+2020-10-10 06:26:49 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:49 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:49 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:49 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:49 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:49 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH 
+2020-10-10 06:26:50 | biu enable_memmap_: 1
+2020-10-10 06:26:50 | biu memory_entry_num_: 64
+2020-10-10 06:26:50 | biu memory_entry_size_: 0x20000
+2020-10-10 06:26:50 | biu physical_memory_entry_num_: 256
+2020-10-10 06:26:50 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:26:50 | ccu isa version is: 63
+2020-10-10 06:26:50 | ccu isa sub version is: 0
+2020-10-10 06:26:50 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:26:50 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:26:50 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:26:50 | vec top isa verion : 630
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | vec objdet isa verion : 630
+2020-10-10 06:26:50 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:26:50 | cube cube_size: 0x10
+2020-10-10 06:26:50 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:26:50 | cube chip_version: Davinci Mini 0
+2020-10-10 06:26:50 | cube support_small_channel_: 0
+2020-10-10 06:26:50 | L0A_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0B_Buf.total_size is: 65536
+2020-10-10 06:26:50 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | L0C_Buf.total_size is: 262144
+2020-10-10 06:26:50 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:26:50 | L1_Buf.total_size is: 1048576
+2020-10-10 06:26:50 | L1_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | UB_Buffer.total_size is: 262144
+2020-10-10 06:26:50 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:26:50 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:26:50 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:26:50 | ===============================================================================
+2020-10-10 06:26:50 | >>>>                                                                       <<<<
+2020-10-10 06:26:50 | >>>>                        PV Model Init Suc                              <<<<
+2020-10-10 06:26:50 | >>>>                                                                       <<<<
+2020-10-10 06:26:50 | ===============================================================================
+2020-10-10 06:26:50 | [==========] Running 1 test from 1 test case.
+2020-10-10 06:26:50 | [----------] Global test environment set-up.
+2020-10-10 06:26:50 | [----------] 1 test from SQRT_ST
+2020-10-10 06:26:50 | SQRT_ST ST SetUp
+2020-10-10 06:26:50 | [ RUN      ] SQRT_ST.test_sqrt_100_100_float16
+2020-10-10 06:26:50 | [INFO] [test] [/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/comm/one_in_one_out_layer.hpp:241] -----------Start to run sqrt ST case[100_100_float16]----------
+2020-10-10 06:26:50 | [INFO] [readBinFile] [/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:97] file:./llt/ops/common/kernel_bin/sqrt/cce_sqrt_100_100_float16.o read succ, size is 1544!
+2020-10-10 06:26:50 | open::LD_LIBRARY_PATH fp32_ln.dat
+2020-10-10 06:26:51 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:26:51 | 
+2020-10-10 06:26:51 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:53 drvMoveTsReport:taskReportQueue is empty
+2020-10-10 06:26:51 | open::LD_LIBRARY_PATH fp32_exp.dat
+2020-10-10 06:28:28 | sqrt st start running...
+2020-10-10 06:28:28 | TestRun Run-Configuration
+2020-10-10 06:28:28 | Compile Operator Start
+2020-10-10 06:28:33 | ..
+2020-10-10 06:28:33 | ----------------------------------------------------------------------
+2020-10-10 06:28:33 | Ran 2 tests in 0.675s
+2020-10-10 06:28:33 | 
+2020-10-10 06:28:33 | OK
+2020-10-10 06:28:33 | Platform Info: mode=2, soc_version=Ascend910, core_type=AiCore, aicore_num=32, l1_fusion=False
+2020-10-10 06:28:33 | The current soc_version: Ascend910
+2020-10-10 06:28:33 | [ RUN        ] test_cce_sqrt
+2020-10-10 06:28:33 | not find testcases for cloud
+2020-10-10 06:28:33 | op[sqrt] test success, case_count=1!!
+2020-10-10 06:28:33 | [         OK ] test_cce_sqrt
+2020-10-10 06:28:33 | File in /home/user/AscendProjects/sqrt/tbe/testcases/st/sqrt run time: 0.675s
+2020-10-10 06:28:33 | Compile Operator Finished
+2020-10-10 06:28:33 | Generate Data Start
+2020-10-10 06:28:34 | Info: writing input for sqrt...
+2020-10-10 06:28:34 | Info: writing input for sqrt done!!!
+2020-10-10 06:28:34 | Info: writing output for sqrt done!!!
+2020-10-10 06:28:34 | Generate Data Finished
+2020-10-10 06:28:34 | Compile Testcase Start
+2020-10-10 06:28:34 | -- The C compiler identification is GNU 7.5.0
+2020-10-10 06:28:34 | -- The CXX compiler identification is GNU 7.5.0
+2020-10-10 06:28:34 | -- Check for working C compiler: /usr/bin/cc
+2020-10-10 06:28:34 | -- Check for working C compiler: /usr/bin/cc -- works
+2020-10-10 06:28:34 | -- Detecting C compiler ABI info
+2020-10-10 06:28:34 | -- Detecting C compiler ABI info - done
+2020-10-10 06:28:34 | -- Detecting C compile features
+2020-10-10 06:28:35 | -- Detecting C compile features - done
+2020-10-10 06:28:35 | -- Check for working CXX compiler: /usr/bin/c++
+2020-10-10 06:28:35 | -- Check for working CXX compiler: /usr/bin/c++ -- works
+2020-10-10 06:28:35 | -- Detecting CXX compiler ABI info
+2020-10-10 06:28:35 | -- Detecting CXX compiler ABI info - done
+2020-10-10 06:28:35 | -- Detecting CXX compile features
+2020-10-10 06:28:36 | -- Detecting CXX compile features - done
+2020-10-10 06:28:36 | -- SOC_VERSION=Ascend910
+2020-10-10 06:28:36 | -- Configuring done
+2020-10-10 06:28:36 | -- Generating done
+2020-10-10 06:28:36 | -- Build files have been written to: /home/user/AscendProjects/sqrt/build/st
+2020-10-10 06:28:36 | Scanning dependencies of target stest_sqrt
+2020-10-10 06:28:36 | [ 25%] Building CXX object CMakeFiles/stest_sqrt.dir/sqrt_st.cc.o
+2020-10-10 06:28:37 | [ 50%] Building CXX object CMakeFiles/stest_sqrt.dir/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc.o
+2020-10-10 06:28:38 | In file included from /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:10:0:
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc: In member function ‘char* Layer::readBinFile(const char*, uint32_t*)’:
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/./log.hpp:37:71: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘size_t {aka long unsigned int}’ [-Wformat=]
+2020-10-10 06:28:38 |                  level, __FUNCTION__, __FILE__, __LINE__, ##__VA_ARGS__);}while(0);
+2020-10-10 06:28:38 |                                                                        ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:97:5: note: in expansion of macro ‘TVM_LOG’
+2020-10-10 06:28:38 |      TVM_LOG(CC_LOG_INFO, "file:%s read succ, size is %d!", file_name, size);
+2020-10-10 06:28:38 |      ^~~~~~~
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc: In member function ‘void Layer::compareSummary(uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, uint64_t, const float*)’:
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:344:121: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 |      printf("<=1/1000: %lu\tPercent: %f\%\n", one_per_thousand, (float)one_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:28:38 |                                                                                                                          ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:345:121: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 |      printf("<=2/1000: %lu\tPercent: %f\%\n", two_per_thousand, (float)two_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:28:38 |                                                                                                                          ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:346:125: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 |      printf("<=3/1000: %lu\tPercent: %f\%\n", three_per_thousand, (float)three_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:28:38 |                                                                                                                              ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:347:123: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 |      printf("<=4/1000: %lu\tPercent: %f\%\n", four_per_thousand, (float)four_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:28:38 |                                                                                                                            ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:348:123: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 |      printf("<=5/1000: %lu\tPercent: %f\%\n", five_per_thousand, (float)five_per_thousand / (float)output_data_length * 100);
+2020-10-10 06:28:38 |                                                                                                                            ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:349:119: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 |      printf("<=1/100 : %lu\tPercent: %f\%\n", one_per_hundred, (float)one_per_hundred / (float)output_data_length * 100);
+2020-10-10 06:28:38 |                                                                                                                        ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:350:127: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 |      printf(" >1/100 : %lu\tPercent: %f\%\n", big_one_per_hundred, (float)big_one_per_hundred / (float)output_data_length * 100);
+2020-10-10 06:28:38 |                                                                                                                                ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc: In member function ‘bool Layer::compareFp16OutputDataPsAlign(fp16_t*, fp16_t*, uint32_t, uint32_t, uint32_t, uint32_t, const float*)’:
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:405:154: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘uint64_t {aka long unsigned int}’ [-Wformat=]
+2020-10-10 06:28:38 |                              printf("[%d]:Expect: %f\tResult: %f\tDiff: %f\tPercent: %f\%\n", index, expect, actual, cmprlst, fabs(cmprlst / actual) * 100);
+2020-10-10 06:28:38 |                                                                                                                                                           ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:405:154: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:412:158: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘uint64_t {aka long unsigned int}’ [-Wformat=]
+2020-10-10 06:28:38 |                                  printf("[%d]:Expect: %f\tResult: %f\tDiff: %f\tPercent: %f\%\n", index, expect, actual, cmprlst, fabs(cmprlst / actual) * 100);
+2020-10-10 06:28:38 |                                                                                                                                                               ^
+2020-10-10 06:28:38 | /home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:412:158: warning: unknown conversion type character ‘\x0a’ in format [-Wformat=]
+2020-10-10 06:28:39 | [ 75%] Building CXX object CMakeFiles/stest_sqrt.dir/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/main.cc.o
+2020-10-10 06:28:40 | [100%] Linking CXX executable /home/user/AscendProjects/sqrt/out/bin/stest_sqrt
+2020-10-10 06:28:40 | [100%] Built target stest_sqrt
+2020-10-10 06:28:40 | Compile Testcase Finished
+2020-10-10 06:28:40 | Run Testcase Start
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:40 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:40 | biu enable_memmap_: 1
+2020-10-10 06:28:40 | biu memory_entry_num_: 64
+2020-10-10 06:28:40 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:40 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:40 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:40 | ccu isa version is: 63
+2020-10-10 06:28:40 | ccu isa sub version is: 0
+2020-10-10 06:28:40 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:40 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:40 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:40 | vec top isa verion : 630
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | vec objdet isa verion : 630
+2020-10-10 06:28:40 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:40 | cube cube_size: 0x10
+2020-10-10 06:28:40 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:40 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:40 | cube support_small_channel_: 0
+2020-10-10 06:28:40 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:40 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:40 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:40 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:40 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:40 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:40 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:40 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:40 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH config_pv_aicore_model.toml
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH 
+2020-10-10 06:28:41 | biu enable_memmap_: 1
+2020-10-10 06:28:41 | biu memory_entry_num_: 64
+2020-10-10 06:28:41 | biu memory_entry_size_: 0x20000
+2020-10-10 06:28:41 | biu physical_memory_entry_num_: 256
+2020-10-10 06:28:41 | ccu loop_body_size_limit_ is: 31
+2020-10-10 06:28:41 | ccu isa version is: 63
+2020-10-10 06:28:41 | ccu isa sub version is: 0
+2020-10-10 06:28:41 | scalar l0_ub_buffer_size: 0x40000
+2020-10-10 06:28:41 | scalar scalar_buffer_size: 0x4000
+2020-10-10 06:28:41 | scalar scalar_buffer_start_addr_: 0x40000
+2020-10-10 06:28:41 | vec top isa verion : 630
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | vec objdet isa verion : 630
+2020-10-10 06:28:41 | cube l0_ab_buffer_size: 0x10000
+2020-10-10 06:28:41 | cube cube_size: 0x10
+2020-10-10 06:28:41 | cube l0_c_buffer_size: 0x40000
+2020-10-10 06:28:41 | cube chip_version: Davinci Mini 0
+2020-10-10 06:28:41 | cube support_small_channel_: 0
+2020-10-10 06:28:41 | L0A_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0A_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0B_Buf.total_size is: 65536
+2020-10-10 06:28:41 | L0B_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | L0C_Buf.total_size is: 262144
+2020-10-10 06:28:41 | L0C_Buf.wrap_en is: 1
+2020-10-10 06:28:41 | L1_Buf.total_size is: 1048576
+2020-10-10 06:28:41 | L1_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | UB_Buffer.total_size is: 262144
+2020-10-10 06:28:41 | UB_Buffer.wrap_en is: 1
+2020-10-10 06:28:41 | SCALAR_Buf.total_size is: 16384
+2020-10-10 06:28:41 | SCALAR_Buf.wrap_en is: 0
+2020-10-10 06:28:41 | ===============================================================================
+2020-10-10 06:28:41 | >>>>                                                                       <<<<
+2020-10-10 06:28:41 | >>>>                        PV Model Init Suc                              <<<<
+2020-10-10 06:28:41 | >>>>                                                                       <<<<
+2020-10-10 06:28:41 | ===============================================================================
+2020-10-10 06:28:41 | [==========] Running 1 test from 1 test case.
+2020-10-10 06:28:41 | [----------] Global test environment set-up.
+2020-10-10 06:28:41 | [----------] 1 test from SQRT_ST
+2020-10-10 06:28:41 | SQRT_ST ST SetUp
+2020-10-10 06:28:41 | [ RUN      ] SQRT_ST.test_sqrt_100_100_float16
+2020-10-10 06:28:41 | [INFO] [test] [/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/comm/one_in_one_out_layer.hpp:241] -----------Start to run sqrt ST case[100_100_float16]----------
+2020-10-10 06:28:41 | [INFO] [readBinFile] [/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/layer.cc:97] file:./llt/ops/common/kernel_bin/sqrt/cce_sqrt_100_100_float16.o read succ, size is 1544!
+2020-10-10 06:28:41 | open::LD_LIBRARY_PATH fp32_ln.dat
+2020-10-10 06:28:42 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:42 | 
+2020-10-10 06:28:42 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:53 drvMoveTsReport:taskReportQueue is empty
+2020-10-10 06:28:42 | open::LD_LIBRARY_PATH fp32_exp.dat
+2020-10-10 06:28:44 | Brandon : external_threadBlock_done_ callback function is called here! count : 1, slot_it : 0, interrupt_num : 99
+2020-10-10 06:28:44 | Brandon : external_threadBlock_done_ callback function is called here! count : 2, slot_it : 0, interrupt_num : 99
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:44 | 
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:44 | 
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:44 | 
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:53 drvMoveTsReport:taskReportQueue is empty
+2020-10-10 06:28:44 | index:0 ,cmprlst:0 ,precision:0 ,actualDataf:2.81055 ,expectedDataf:2.81055
+2020-10-10 06:28:44 | index:1 ,cmprlst:0 ,precision:0 ,actualDataf:1.53125 ,expectedDataf:1.53125
+2020-10-10 06:28:44 | index:2 ,cmprlst:0 ,precision:0 ,actualDataf:3.01367 ,expectedDataf:3.01367
+2020-10-10 06:28:44 | index:3 ,cmprlst:0 ,precision:0 ,actualDataf:2.17578 ,expectedDataf:2.17578
+2020-10-10 06:28:44 | index:4 ,cmprlst:0 ,precision:0 ,actualDataf:3.16016 ,expectedDataf:3.16016
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:44 | 
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:44 | 
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:44 | 
+2020-10-10 06:28:44 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:53 drvMoveTsReport:taskReportQueue is empty
+2020-10-10 06:28:44 | ------errorCount:0, totalOutSize: 10000, errorRatios: 0
+2020-10-10 06:28:44 | [INFO] [test] [/home/user/MindStudio-ubuntu/tools/tbe_tools/st/testcase/comm/one_in_one_out_layer.hpp:277] -----------Finished sqrt ST case[100_100_float16]----------
+2020-10-10 06:28:44 | [       OK ] SQRT_ST.test_sqrt_100_100_float16 (2623 ms)
+2020-10-10 06:28:44 | SQRT_ST ST TearDown
+2020-10-10 06:28:44 | [----------] 1 test from SQRT_ST (2623 ms total)
+2020-10-10 06:28:44 | 
+2020-10-10 06:28:44 | [----------] Global test environment tear-down
+2020-10-10 06:28:44 | [==========] 1 test from 1 test case ran. (2623 ms total)
+2020-10-10 06:28:44 | [  PASSED  ] 1 test.
+2020-10-10 06:28:45 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:45 | 
+2020-10-10 06:28:45 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:45 | 
+2020-10-10 06:28:45 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:53 drvMoveTsReport:taskReportQueue is empty
+2020-10-10 06:28:45 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:61 drvMoveTsReport:memcpy one report from TS to Driver stub successfully.
+2020-10-10 06:28:45 | 
+2020-10-10 06:28:45 | [DRVSTUB_LOG] runtime/cmodel_driver/driver_queue.c:53 drvMoveTsReport:taskReportQueue is empty
+2020-10-10 06:28:45 | Run Testcase Finished
+2020-10-10 06:28:45 | TestRun Finished
+2020-10-10 06:28:45 | report index.html: http://localhost:63342/sqrt/out/coverage_report/st/index.html?_ijt=6j2pyhfikfevr6mrvyb4y4eerp

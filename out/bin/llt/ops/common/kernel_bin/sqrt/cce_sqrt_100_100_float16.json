@@ -1,0 +1,13 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"cce_sqrt_100_100_float16",
+    "binFileSuffix":".o",
+    "blockDim":10,
+    "kernelName":"cce_sqrt_100_100_float16__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"8d2133cda7bbee1cf16f352082342b992791f524852569dcf1ca14948e6aa4ef"
+}

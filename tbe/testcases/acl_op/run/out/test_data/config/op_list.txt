@@ -1,0 +1,25 @@
+[
+  {
+    "op": "[TODO] type op name in op_proto here",
+    "attr": [],
+    "input_desc": [
+      {
+        "format": "ND",
+        "shape": [8, 16],
+        "type": "int32"
+      },
+      {
+        "format": "ND",
+        "shape": [8, 16],
+        "type": "int32"
+      }
+    ],
+    "output_desc": [
+      {
+        "format": "ND",
+        "shape": [8, 16],
+        "type": "int32"
+      }
+    ]
+  }
+]
